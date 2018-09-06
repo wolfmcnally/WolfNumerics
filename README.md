@@ -1,6 +1,6 @@
 # WolfNumerics
 
-[![CI Status](https://img.shields.io/travis/ironwolf/WolfNumerics.svg?style=flat)](https://travis-ci.org/ironwolf/WolfNumerics)
+[![CI Status](https://img.shields.io/travis/wolfmcnally/WolfNumerics.svg?style=flat)](https://travis-ci.org/wolfmcnally/WolfNumerics)
 [![Version](https://img.shields.io/cocoapods/v/WolfNumerics.svg?style=flat)](https://cocoapods.org/pods/WolfNumerics)
 [![License](https://img.shields.io/cocoapods/l/WolfNumerics.svg?style=flat)](https://cocoapods.org/pods/WolfNumerics)
 [![Platform](https://img.shields.io/cocoapods/p/WolfNumerics.svg?style=flat)](https://cocoapods.org/pods/WolfNumerics)
@@ -22,7 +22,7 @@ pod 'WolfNumerics'
 
 ## Author
 
-ironwolf, wolf@wolfmcnally.com
+Wolf McNally, wolf@wolfmcnally.com
 
 ## License
 

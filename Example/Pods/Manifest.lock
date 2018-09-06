@@ -1,0 +1,16 @@
+PODS:
+  - WolfNumerics (1.0)
+
+DEPENDENCIES:
+  - WolfNumerics (from `../`)
+
+EXTERNAL SOURCES:
+  WolfNumerics:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WolfNumerics: f9d83d3e5462e0667512331758d968eb99d413a2
+
+PODFILE CHECKSUM: 7ac54adb5f60d5b7b7ea22e2910812b28a873415
+
+COCOAPODS: 1.6.0.beta.1
