@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		002882CBF8B99A0352D571545859D84B /* IntervalCreationOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A23FB1359EFCA6AF5BEBDCA71F2D7 /* IntervalCreationOperator.swift */; };
+		03CB5E7B2141F1AD0066F526 /* Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB5E7A2141F1AD0066F526 /* Interpolable.swift */; };
 		1F242352D3280A1AABD3F88659F1DADB /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB4C30689341EEFF16C9AF12243EF3 /* Random.swift */; };
 		20B6A2C8C2A6AA428384AD47273ACC49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		339D82084EED9DB12375D081DA9071ED /* Pods-WolfNumerics_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FED5A34C1F03325ACCC4CCEFC5ACF3FC /* Pods-WolfNumerics_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,24 +35,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03CB5E7A2141F1AD0066F526 /* Interpolable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Interpolable.swift; path = WolfNumerics/Classes/Interpolable.swift; sourceTree = "<group>"; };
 		069B314B4E9C2D2CEF37753870FF0610 /* Pods-WolfNumerics_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WolfNumerics_Tests.modulemap"; sourceTree = "<group>"; };
 		0DDD665C5578EDAAA443ED9A1B333DC3 /* Frac.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Frac.swift; path = WolfNumerics/Classes/Frac.swift; sourceTree = "<group>"; };
 		0F86DCB6121E52DEEAA80B0D0E705734 /* WolfNumerics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WolfNumerics-umbrella.h"; sourceTree = "<group>"; };
-		118B789DC6E76DCB6FB0E1BDAB9AF7D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		118B789DC6E76DCB6FB0E1BDAB9AF7D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		183A9E03157D4A36FB7C900AAEC82571 /* WolfNumerics-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WolfNumerics-Info.plist"; sourceTree = "<group>"; };
 		247C14215DF3D562E5AB9AF035108645 /* WolfNumerics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WolfNumerics-dummy.m"; sourceTree = "<group>"; };
 		2803B70073094BC74B78F04027C06A55 /* RunningAverage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RunningAverage.swift; path = WolfNumerics/Classes/RunningAverage.swift; sourceTree = "<group>"; };
 		2F826D6C9171D0DC4759F39BF58C5E81 /* NumericUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NumericUtils.swift; path = WolfNumerics/Classes/NumericUtils.swift; sourceTree = "<group>"; };
 		300F94285A20F6EE0E5F91D87E56E498 /* Lerp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lerp.swift; path = WolfNumerics/Classes/Lerp.swift; sourceTree = "<group>"; };
-		33F2E6E9E7ED47EC8263183CF7138FA8 /* WolfNumerics.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = WolfNumerics.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		33F2E6E9E7ED47EC8263183CF7138FA8 /* WolfNumerics.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = WolfNumerics.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		42220CF56EBEBD1B3CB0CDB50782EF37 /* BinarySearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinarySearch.swift; path = WolfNumerics/Classes/BinarySearch.swift; sourceTree = "<group>"; };
-		4C82FA0013FE75743CF661747CCB646E /* WolfNumerics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WolfNumerics.framework; path = WolfNumerics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C82FA0013FE75743CF661747CCB646E /* WolfNumerics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WolfNumerics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5072576DA7BE91F52DE26F2DD004A8A8 /* Pods-WolfNumerics_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WolfNumerics_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		57E7593C946DC523A5C6A68D647E026A /* WolfNumerics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WolfNumerics.modulemap; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7E7A8CF323E40C4B5475B0588DA42E74 /* Pods-WolfNumerics_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WolfNumerics_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8A1C969D0F92AA15FEAA13EC04FD38FD /* WolfNumerics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WolfNumerics.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93EB4C30689341EEFF16C9AF12243EF3 /* Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Random.swift; path = WolfNumerics/Classes/Random.swift; sourceTree = "<group>"; };
 		B0790A57BF37220D7946FB64DD4D0E16 /* Pods-WolfNumerics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WolfNumerics_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B1292B01A81C85FEB3443F0EAEE3B19F /* Interval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interval.swift; path = WolfNumerics/Classes/Interval.swift; sourceTree = "<group>"; };
@@ -60,8 +62,8 @@
 		CEF6D0D3984A365E8DFAD878A6378ABB /* Pods-WolfNumerics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WolfNumerics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4EC47FAD8354CEEA2B41B4412D11BC6 /* WolfNumerics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WolfNumerics-prefix.pch"; sourceTree = "<group>"; };
 		D6D03820CCBC2EAB4A9C47F4A90899F7 /* Pods-WolfNumerics_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WolfNumerics_Tests-Info.plist"; sourceTree = "<group>"; };
-		F43651621209A83900A780DB17CAB3BB /* Pods_WolfNumerics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WolfNumerics_Tests.framework; path = "Pods-WolfNumerics_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F54B6B68065145ED007A4662993EE5D2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F43651621209A83900A780DB17CAB3BB /* Pods_WolfNumerics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolfNumerics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54B6B68065145ED007A4662993EE5D2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FB7A23FB1359EFCA6AF5BEBDCA71F2D7 /* IntervalCreationOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntervalCreationOperator.swift; path = WolfNumerics/Classes/IntervalCreationOperator.swift; sourceTree = "<group>"; };
 		FED5A34C1F03325ACCC4CCEFC5ACF3FC /* Pods-WolfNumerics_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WolfNumerics_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +186,7 @@
 			children = (
 				42220CF56EBEBD1B3CB0CDB50782EF37 /* BinarySearch.swift */,
 				0DDD665C5578EDAAA443ED9A1B333DC3 /* Frac.swift */,
+				03CB5E7A2141F1AD0066F526 /* Interpolable.swift */,
 				B1292B01A81C85FEB3443F0EAEE3B19F /* Interval.swift */,
 				FB7A23FB1359EFCA6AF5BEBDCA71F2D7 /* IntervalCreationOperator.swift */,
 				300F94285A20F6EE0E5F91D87E56E498 /* Lerp.swift */,
@@ -321,6 +324,7 @@
 				95C6B64C7D2D8D92D0E0258097C30D49 /* NumericUtils.swift in Sources */,
 				1F242352D3280A1AABD3F88659F1DADB /* Random.swift in Sources */,
 				4F217FFA56817092445CCAEB8ECF3E45 /* RunningAverage.swift in Sources */,
+				03CB5E7B2141F1AD0066F526 /* Interpolable.swift in Sources */,
 				967A6EBB58E53D003F6AE5002C2B779F /* WolfNumerics-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,8 +369,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -463,8 +466,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
