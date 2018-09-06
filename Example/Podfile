@@ -1,0 +1,6 @@
+use_frameworks!
+target 'WolfNumerics_Tests' do
+  pod 'WolfNumerics', :path => '../'
+  
+  
+end
