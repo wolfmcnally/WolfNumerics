@@ -3,7 +3,6 @@
 //  WolfNumerics
 //
 //  Created by Wolf McNally on 6/22/17.
-//  Copyright © 2017 WolfMcNally.com.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -84,6 +83,14 @@ extension BinaryFloatingPoint {
         assert(b2.isFinite)
 
         return a2 + ((b2 - a2) * (self - a1)) / (b1 - a1)
+    }
+}
+
+extension Interval {
+    public func lerped(from interval1: Interval<T>, to interval2: Interval<T>) -> Interval<T> {
+        let a = self.a.lerped(from: interval1, to: interval2)
+        let b = self.b.lerped(from: interval1, to: interval2)
+        return a .. b
     }
 }
 

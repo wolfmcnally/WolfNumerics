@@ -3,7 +3,6 @@
 //  WolfNumerics
 //
 //  Created by Wolf McNally on 6/19/16.
-//  Copyright © 2016 WolfMcNally.com.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +24,7 @@
 
 /// Represents a closed floating-point interval from `a`..`b`. Unlike ClosedRange,
 /// `a` may be greater than `b`.
-public struct Interval<T: FloatingPoint> {
+public struct Interval<T: BinaryFloatingPoint> {
     public typealias Bound = T
 
     public let a: Bound

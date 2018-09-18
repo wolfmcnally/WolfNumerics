@@ -3,7 +3,6 @@
 //  WolfNumerics
 //
 //  Created by Wolf McNally on 1/10/16.
-//  Copyright © 2016 WolfMcNally.com.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -101,6 +100,11 @@ public struct Random {
         return number(0...1) > 0
     }
 
+    /// Returns a random Frac
+    public func frac() -> Frac {
+        return number(0 .. 1)
+    }
+
     // "Generating Gaussian Random Numbers"
     // http://www.taygeta.com/random/gaussian.html
 
@@ -146,6 +150,11 @@ public struct Random {
     /// Returns a random boolean
     public static func boolean() -> Bool {
         return Random.shared.boolean()
+    }
+
+    /// Returns a random Frac
+    public static func frac() -> Frac {
+        return Random.shared.frac()
     }
 
     public static func index<C: Collection>(in choices: C) -> C.Index {

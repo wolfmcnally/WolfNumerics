@@ -1,7 +1,7 @@
 {
   "name": "WolfNumerics",
   "version": "1.0",
-  "summary": "Useful numeric types and methods for Swift.",
+  "summary": "Some useful numeric types and methods for Swift.",
   "homepage": "https://github.com/wolfmcnally/WolfNumerics",
   "license": {
     "type": "MIT",
