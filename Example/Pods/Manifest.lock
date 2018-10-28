@@ -1,5 +1,5 @@
 PODS:
-  - WolfNumerics (1.0)
+  - WolfNumerics (1.0.3)
 
 DEPENDENCIES:
   - WolfNumerics (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WolfNumerics: 2f24ca5dc4b423c73e1fa18a3687176e964a65de
+  WolfNumerics: 738575892836b87131c365e8f2de04ef90df764e
 
 PODFILE CHECKSUM: 7ac54adb5f60d5b7b7ea22e2910812b28a873415
 
