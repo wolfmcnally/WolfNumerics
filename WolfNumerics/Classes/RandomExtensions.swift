@@ -22,8 +22,6 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
-
 extension Double {
     /// Returns a random number in the half-open interval
     public static func random(in interval: Interval<Double>) -> Double {

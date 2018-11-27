@@ -22,8 +22,27 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
-
 public protocol Interpolable {
     func interpolated(to other: Self, at frac: Frac) -> Self
 }
+
+extension Float: Interpolable {
+    public func interpolated(to other: Float, at frac: Frac) -> Float {
+        return Float(frac).lerpedFromFrac(to: self .. other)
+    }
+}
+
+extension Double: Interpolable {
+    public func interpolated(to other: Double, at frac: Frac) -> Double {
+        return frac.lerpedFromFrac(to: self .. other)
+    }
+}
+
+#if canImport(CoreGraphics)
+import CoreGraphics
+extension CGFloat: Interpolable {
+    public func interpolated(to other: CGFloat, at frac: Frac) -> CGFloat {
+        return CGFloat(frac).lerpedFromFrac(to: self .. other)
+    }
+}
+#endif

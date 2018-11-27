@@ -22,8 +22,6 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
-
 extension NSRange {
     public init(cfRange: CFRange) {
         self.init(location: cfRange.location, length: cfRange.length)

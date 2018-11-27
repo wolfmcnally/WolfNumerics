@@ -35,6 +35,8 @@ public struct Interval<T: BinaryFloatingPoint> {
         self.a = a
         self.b = b
     }
+
+    public static var unit: Interval<T> { return 0 .. 1 }
 }
 
 extension Interval {
@@ -131,6 +133,9 @@ extension Interval {
         let i = normalized()
         return i.a ... i.b
     }
+}
+
+extension Interval: Equatable {
 }
 
 extension Double {
