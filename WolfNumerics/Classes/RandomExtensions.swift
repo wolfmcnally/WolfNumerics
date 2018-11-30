@@ -105,3 +105,12 @@ public func randomChoice<T>(_ choices: T...) -> T {
 public func randomChoice<G, T>(using generator: inout G, _ choices: T...) -> T where G: RandomNumberGenerator {
     return choices.randomElement(using: &generator)
 }
+
+public func randomCount(in i: CountableClosedRange<Int>) -> CountableClosedRange<Int> {
+    return 0 ... Int.random(in: i.lowerBound ..< i.upperBound)
+}
+
+public func randomInsertionPoint(in string: String) -> String.Index {
+    let i = Int.random(in: 0 ... string.count)
+    return string.index(string.startIndex, offsetBy: i)
+}
