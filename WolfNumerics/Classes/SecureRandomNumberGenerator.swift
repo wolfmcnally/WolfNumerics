@@ -25,6 +25,8 @@
 import Security
 
 public final class SecureRandomNumberGenerator: RandomNumberGenerator {
+    public init() { }
+
     public func next() -> UInt64 {
         var result: UInt64 = 0
         precondition(SecRandomCopyBytes(kSecRandomDefault, MemoryLayout<UInt64>.size, &result) == errSecSuccess)
