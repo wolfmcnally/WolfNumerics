@@ -56,6 +56,8 @@ extension Float {
     }
 }
 
+#if canImport(CoreGraphics)
+import CoreGraphics
 extension CGFloat {
     /// Returns a random number in the half-open interval
     public static func random(in interval: Interval<CGFloat>) -> CGFloat {
@@ -67,7 +69,10 @@ extension CGFloat {
         return CGFloat.random(in: 0 ..< 1, using: &generator).lerpedFromFrac(to: interval)
     }
 }
+#endif
 
+#if canImport(Foundation)
+import Foundation
 extension UUID {
     public static func random<T>(using generator: inout T) -> UUID where T: RandomNumberGenerator {
         var bytes = (0 ..< 16).map { _ in UInt8.random(in: UInt8.min ... UInt8.max, using: &generator) }
@@ -77,33 +82,36 @@ extension UUID {
                            bytes[12], bytes[13], bytes[14], bytes[15]))
     }
 }
+#endif
 
 extension Collection {
-    public func randomIndex() -> Index {
+    public func randomIndex() -> Index? {
+        guard !isEmpty else { return nil }
         let offset = Int.random(in: 0 ..< count)
         return index(startIndex, offsetBy: offset)
     }
 
-    public func randomIndex<T>(using generator: inout T) -> Index where T: RandomNumberGenerator {
+    public func randomIndex<T>(using generator: inout T) -> Index? where T: RandomNumberGenerator {
+        guard !isEmpty else { return nil }
         let offset = Int.random(in: 0 ..< count, using: &generator)
         return index(startIndex, offsetBy: offset)
     }
 
-    public func randomElement() -> Element {
-        return self[randomIndex()]
+    public func randomChoice() -> Element {
+        return self[randomIndex()!]
     }
 
-    public func randomElement<T>(using generator: inout T) -> Element where T: RandomNumberGenerator {
-        return self[randomIndex(using: &generator)]
+    public func randomChoice<T>(using generator: inout T) -> Element where T: RandomNumberGenerator {
+        return self[randomIndex(using: &generator)!]
     }
 }
 
 public func randomChoice<T>(_ choices: T...) -> T {
-    return choices.randomElement()
+    return choices.randomElement()!
 }
 
 public func randomChoice<G, T>(using generator: inout G, _ choices: T...) -> T where G: RandomNumberGenerator {
-    return choices.randomElement(using: &generator)
+    return choices.randomElement(using: &generator)!
 }
 
 public func randomCount(in i: CountableClosedRange<Int>) -> CountableClosedRange<Int> {
