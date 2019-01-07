@@ -15,7 +15,7 @@ let package = Package(
             name: "WolfNumerics",
             dependencies: []),
         .testTarget(
-            name: "Tests",
+            name: "WolfNumericsTests",
             dependencies: ["WolfNumerics"]),
         ]
 )
