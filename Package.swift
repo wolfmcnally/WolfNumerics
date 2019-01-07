@@ -14,12 +14,8 @@ let package = Package(
         .target(
             name: "WolfNumerics",
             dependencies: []),
-        .target(
-            name: "Demo",
-            dependencies: ["WolfNumerics"]),
         .testTarget(
             name: "Tests",
             dependencies: ["WolfNumerics"]),
-        ],
-    swiftLanguageVersions: [.v4_2]
+        ]
 )

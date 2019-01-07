@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "WolfNumerics::Demo"
-               BuildableName = "Demo"
-               BlueprintName = "Demo"
-               ReferencedContainer = "container:WolfNumerics.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "WolfNumerics::WolfNumerics"
                BuildableName = "WolfNumerics.framework"
                BlueprintName = "WolfNumerics"
@@ -69,9 +55,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "WolfNumerics::Demo"
-            BuildableName = "Demo"
-            BlueprintName = "Demo"
+            BlueprintIdentifier = "WolfNumerics::WolfNumerics"
+            BuildableName = "WolfNumerics.framework"
+            BlueprintName = "WolfNumerics"
             ReferencedContainer = "container:WolfNumerics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
