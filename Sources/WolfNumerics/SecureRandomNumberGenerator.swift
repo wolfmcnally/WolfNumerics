@@ -22,6 +22,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if canImport(Security)
 import Security
 
 public final class SecureRandomNumberGenerator: RandomNumberGenerator {
@@ -33,3 +34,4 @@ public final class SecureRandomNumberGenerator: RandomNumberGenerator {
         return result
     }
 }
+#endif
