@@ -24,6 +24,8 @@
 
 import Foundation
 
+#if canImport(CoreFoundation)
+import CoreFoundation
 extension NSRange {
     public init(cfRange: CFRange) {
         self.init(location: cfRange.location, length: cfRange.length)
@@ -43,3 +45,4 @@ extension CFRange {
         self.init(location: range.lowerBound, length: range.count)
     }
 }
+#endif
