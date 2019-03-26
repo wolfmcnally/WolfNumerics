@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'WolfNumerics'
-    s.version          = '3.0.4'
+    s.version          = '4.0'
     s.summary          = 'Some useful numeric types and methods for Swift.'
 
     s.homepage         = 'https://github.com/wolfmcnally/WolfNumerics'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
     s.source_files = 'Sources/WolfNumerics/**/*'
 
-    s.swift_version = '4.2'
+    s.swift_version = '5.0'
 
     s.ios.deployment_target = '9.3'
     s.macos.deployment_target = '10.13'
