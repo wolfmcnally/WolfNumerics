@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'WolfNumerics'
-    s.version          = '4.0'
+    s.version          = '4.0.1'
     s.summary          = 'Some useful numeric types and methods for Swift.'
 
     s.homepage         = 'https://github.com/wolfmcnally/WolfNumerics'

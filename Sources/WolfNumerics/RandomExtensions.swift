@@ -75,7 +75,7 @@ extension CGFloat {
 import Foundation
 extension UUID {
     public static func random<T>(using generator: inout T) -> UUID where T: RandomNumberGenerator {
-        var bytes = (0 ..< 16).map { _ in UInt8.random(in: UInt8.min ... UInt8.max, using: &generator) }
+        let bytes = (0 ..< 16).map { _ in UInt8.random(in: UInt8.min ... UInt8.max, using: &generator) }
         return UUID(uuid: (bytes[0], bytes[1], bytes[2], bytes[3],
                            bytes[4], bytes[5], bytes[6], bytes[7],
                            bytes[8], bytes[9], bytes[10], bytes[11],
